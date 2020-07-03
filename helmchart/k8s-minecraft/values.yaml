@@ -10,15 +10,16 @@ image:
   pullPolicy: Always
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 25565
+  nodePort: 25565
   name: minecraft
   
 minecraft:
   eula: true
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
   path: /
   port: "25565"

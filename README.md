@@ -1,3 +1,13 @@
+
+# changed
+
+add helm chart template to support service.type=NodePort and specified nodePort value
+rm .swp
+change apps/v1beta1 to apps/v1
+
+
+
+
 # Run on Docker host
 
 First create a directory with read/write acces for a user with uid 1000.
